@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="img/x-icon" href="fb.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <title>facebook</title>
+        <style>
+          
+            
+          .body{
+                margin:0;
+                padding:0;
+                font-family:'open-sans' , sans-serif;
+            }
+            .header{
+                background:#3E5c9a;
+                overflow:hidden;
+            }
+            .header:: after{
+                content:'';
+                clear:both;
+                display:block;
+            }
+            .container{
+                width:75%;
+                margin:auto;
+            }
+            .logo-area{
+                width:30%;
+                float:left;
+                
+            }
+            .logo-area img{
+                width:160px;
+                margin-top:20px;
+            }
+            .login-area{
+                width:70%;
+                float:left;
+                color:#fff;
+            }
+            .login-area form{
+                float:right;
+            }
+            .login-area label,
+            .login-area input{
+                display:block;
+            }
+            .login-area .email,
+	        .login-area .password,
+	        .login-area .login{
+		     float:left;
+                margin-right:12px;
+            }
+            .login-area label{
+                   color:#9cb4d8;
+	              font-size:12px;
+                   margin-bottom:5px;
+            }
+            .login-area .login{
+                margin-right:0;
+            }
+            .login-area input[type="text"]
+	        .login-area input[type="password"]{
+	           border:1px solid #000;
+               font-size:14px;
+               font-weight:300;
+               padding:0px 5px;
+	         }
+            .login-area .password  a{
+	         text-decoration:none;
+	         color:#9cb4d8;
+	         font-size:12px;
+	         }
+	         .login-area .password a:hover{
+	         text-decoration:underline;
+	         }
+            .login-area input[type="submit"]{
+	          background-color:#4267b2;
+	          border:1px solid #29487d;
+	          color:#fff;
+	          padding:3px 8px;
+                margin-top:24px;
+	           }
+          
+            }
+            .wall h4{
+                 font-size:20px;
+	             color:#0c385f;
+	             font-weight:600;
+            }
+            
+            
+            }
+            .noll h2{
+                font-size:30px;
+	            font-family:tahoma;
+	            color:#333;
+            }
+            .nop{
+                background:linear-gradient(#ffffff,#D4D9E9);
+            }
+            .right-area input[type="text"],
+            .right-area input[type="password"]{
+                width:100%;
+                box-sizing:border-box;
+                border:1px solid #bdc7d8;
+                border-radius:5px;
+                padding:8px 10px;
+                font-size:18px;
+                margin:5px 0;
+            }
+            .full-name{
+                overflow:hidden;
+            }
+            .first-name{
+                width:48%;
+                float:left;
+                margin-right:4%;
+            }
+            .surname{
+                width:48%;
+                float:left;
+            }
+            .birthday{
+                overflow:hidden;
+            }
+            .birthday h4{
+                margin-top:0;
+                margin-bottom: 5px;
+            }
+            .birth-date{
+                overflow:hidden;
+                float:left;
+                margin-right:10px;
+                width:200px;
+            }
+            .birth-date select{
+                border:1px solid #ccc;
+                padding:3px;
+                float:left;
+            }
+            .birth-link{
+                float:left;
+                width:190px;
+             
+            }
+            .birth-link a{
+                 font-size:13px;
+                display:block;
+                line-height:1.1;
+                text-decoration:none;
+                 color:#365899;
+            }
+            .birht-link a:hover{
+                text-decoration:underline;
+            }
+            .gender{
+                margin:10px 0;
+                margin-top:30px;
+            }
+            .gender label{
+                font-size:20px;
+                font-weight:400;
+                color:1d2129;
+                margin-right:5px;
+            }
+            .bolo p{
+                font-size:13px;
+                color:#777;
+                width:80%;
+            }
+            .katappa{
+                margin-bottom:30px;
+            }
+            .katappa input{
+                background:linear-gradient(#67ae55,#578843);
+                box-shadow: inset 0 px px;
+                border-color:#3b6e22 #3b6e22 #2c5115;    
+                border-width:1px;
+                border-style:solid;
+                padding:7px 14px;
+                min-width:194px;
+                text-align:center;
+                color:#fff;
+                border-radius:3px;
+                font-weight:400;
+                font-size:20px;
+                transition:0.5s;
+            }
+            .katappa input:hover{
+             background:   linear-gradient(#578843,#67ae55);
+                 cursor: pointer;
+            }
+            .business1{
+                font-weight:600;
+                    color:#666;
+                font-size:14px;
+                margin-bottom:50px;
+            }
+            .business1 a{
+                text-decoration:none;
+                color:#368599;
+            }
+            .business1:hover a{
+                text-decoration:underline;
+            }
+            .item ul li{
+		        display:inline;
+	
+            }
+            .item ul li a{
+		        text-decoration:none;
+		        color:#365899;
+		        font-size:13px;
+	        }     
+            .link ul li{
+                display:inline;
+            }
+	        .link ul li a{
+		        text-decoration:none;
+		        color:#365899;
+		        font-size:13px;
+	        }
+            .bottom{
+                color:#365899;
+		        font-size:13px;
+               }
+       
+        </style>
+        <body>
+           <header>
+	<div class="header">
+	<div class="container">
+	<div class="logo-area">
+	<img src="fb3.png">
+    </div>
+	<div class="login-area">
+	<form action="#" method="post">
+	<div class="email">
+	<label for="Email">Email or phon</label>
+	<input type="text" id="email">
+	</div>
+	<div class="password">
+	<label for="password">Password</label>
+	<input type="text" id="password">
+	<a href="#">forgotten account?</a>
+	</div>
+	<div class="login">
+	<input type="submit" value="login">
+	</div>
+
+	</form>
+	</div>
+	</div>
+	</div>
+	</header>
+            <!--start section-->
+            
+            <section id="sign-up" >
+                <div class="nop">
+                <div class="container">
+                <div class="row">
+                <div class="col-6">
+                <div class="wall" >
+                <h4 class="mt-4 mr-4">facebook helps you connect and share with the people in your life</h4>
+                </div>
+                <div class="mt-5">
+                <img src="right.png">
+                </div>
+                    </div>
+                <div class="col-6">
+                <div class="noll">
+                <h2 class="mt-3"><strong>Creat an account</strong></h2>
+                </div>
+                <h5>It's free and alawys will be</h5>
+                <div class="right-area">
+                <form>
+                <div class="full-name">
+                <div class="first-name">
+                <input  type="text" placeholder="First Name">
+                </div>
+                <div class="surname">
+                <input  type="text" placeholder="surname">
+                </div>
+                </div>
+                <input class="form-control" type="Email" placeholder="Mobile number or email adress">
+                <input type="text" placeholder="New passwrd">
+                <div class="birthday">
+                 <h4>Birthday</h4>
+                 <div class="birth-date">
+                 <select class="">
+                     <option value="day">day</option>
+	                 <option value="day">1</option>
+	                 <option value="day">2</option>
+	                 <option value="day">3</option>
+	                 <option value="day">4</option>
+	                 <option value="day">5</option>
+                 </select>
+                 <select class="">
+	                 <option value="month">Month</option>
+	                 <option value="Jan">Jan</option>
+	                 <option value="Feb">Feb</option>
+	                 <option value="Mar">Mar</option>
+	                 <option value="Apr">Apr</option>
+	                 <option value="May">May</option>
+	              </select>
+                  <select class="">
+	                 <option value="year">Year</option>
+	                 <option value="2020">2020</option>
+	                 <option value="2019">2019</option>
+	                 <option value="2018">2018</option>
+	                 <option value="2017">2017</option>
+	                 <option value="2016">2016</option>
+	              </select>
+                    </div>
+                   <div class="birth-link">
+                   <a  href="#">why do i need to provide my date of birth?</a> 
+                   </div>
+                   </div>   
+                   <div class="gender">
+	               <input	id="female" name="gender" type="radio">
+	               <label for="female">female</label>
+		           <input id="male" name="gender" type="radio">
+	               <label for="male">male</label>
+	               </div>
+                   <div class="bolo">
+                    <p><small>By clicking Sign Up, you agree to our <a href="#">Terms, Data Policy</a> and<a href="#">cookie policy</a> You may receive SMS notifications from us and can opt out at any time.</small></p>
+                    </div>
+                    <div class="katappa">
+                    <input type="submit" value="sing up">
+                     </div>
+                     </form>
+                     </div>
+                     <div class="business1">
+                                        
+                     <span class="business mb-4"><a href="#">Create a Page</a> for a celebrity, band or business.</span>
+                                          
+                                      
+                                  
+                              </div>
+                        </div>
+                    </div>
+                
+                    </div>
+                </div>
+            </section>
+            
+            <!--start footer area-->
+            
+            <footer class="sign-in">
+                <div class="mt-5 ">
+                <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="item">
+                        <ul class="text-align-center">
+		                       <li class="active"><a class="ml-2" href="#">English (UK)</a></li>
+		                       <li class=""><a class="ml-2" href="#">বাংল</a>া</li>
+		                       <li class=""><a class="ml-2" href="#">অসমীয়া</a></li>
+		                       <li class=""><a class="ml-2" href="#"><हिन्द</a>ी</li>
+		                       <li class=""><a class="ml-2" href="#">Bahasa Indonesia</a></li>
+                                <li class=""><a class="ml-2" href="#">bangla</a>                                
+		                       <li class=""><a class="ml-2" href="#">لعربية</a></li>
+		                       <li class=""><a class="ml-2" href="#">Bahasa Indonesia</a></li>
+		                       <li class=""><a class="ml-2" href="#">Bahasa Indonesia</a></li>
+		                       <li class=""><a class="ml-2" href="#">Bahasa Melayu</a></li>
+		                       <li class=""><a class="ml-2" href="#">Español</a></li>
+		                       <li class=""><a class="ml-2" href="#">(Brasil)</a></li>
+		
+		                    
+
+		                </ul>
+                      </div>
+                        <hr>
+                    <div class="link">
+                        <ul class="">
+		<li><a class="ml-2" href="#">sing up</a></li>
+		<li><a class="ml-2" href="#">Daftar</a></li>
+		<li><a class="ml-2" href="#">Login</a></li>
+		<li><a class="ml-2" href="#">messenger</a> </li>
+		<li><a class="ml-2" href="#">Facebook Lite</a> </li>
+		<li><a class="ml-2" href="#">Watch</a> </li>
+		<li><a class="ml-2" href="#">Orang</a></li>
+		<li><a class="ml-2" href="#">Halaman</a></li>
+		<li><a class="ml-2" href="#">Tempat</a></li>
+		<li><a class="ml-2" href="#">Game</a></li>
+		<li><a class="ml-2" href="#">loaks</a></li>
+		<li><a class="ml-2" href="#">Market</a></li>
+		<li><a class="ml-2" href="#">place</a></li>
+		<li><a class="ml-2" href="#">Facebook Pay</a></li>
+		<li><a class="ml-2" href="#">Grup</a></li>
+		<li><a class="ml-2" href="#">oculus</a></li>
+		<li><a class="ml-2" href="#">portal</a></li>
+		<li><a class="ml-2" href="#">instagram</a></li>
+		<li><a class="ml-2" href="#">lokal</a></li>
+		<li><a class="ml-2" href="#">penggal</a></li>
+		<li><a class="ml-2" href="#">langan</a></li>
+		<li><a class="ml-2" href="#">sfdf</a></li>
+		<li><a class="ml-2" href="#">jkh,vhg</a></li>
+		<li><a class="ml-2" href="#">vgjkj</a></li>
+		<li><a class="ml-2" href="#">kaot</a></li>
+		<li><a class="ml-2" href="#">voroyt</a></li>
+		<li><a class="ml-2" href="#">ganga</a></li>
+		<li><a class="ml-2" href="#">noti</a></li>
+		<li><a class="ml-2" href="#">active</a></li>
+		<li><a class="ml-2" href="#">lite</a></li>
+        <li><a class="ml-2" href="#">portal</a></li>
+		<li><a class="ml-2" href="#">instagram</a></li>
+		<li><a class="ml-2" href="#">lokal</a></li>
+		<li><a class="ml-2" href="#">penggal</a></li>
+        <li><a class="ml-2" href="#">Halaman</a></li>
+		<li><a class="ml-2" href="#">Tempat</a></li>
+		<li><a class="ml-2" href="#">Game</a></li>
+		<li><a class="ml-2" href="#">loaks</a></li>
+		<li><a class="ml-2" href="#">Market</a></li>
+		<li><a class="ml-2" href="#">place</a></li>
+		<li><a class="ml-2" href="#">Facebook Pay</a></li>
+		<li><a class="ml-2" href="#">Grup</a></li>
+	
+
+
+		</ul>
+         </div>
+                        
+                        
+                        
+    <div class="bottom">
+	<span class="ml-5">facebook &copy;   2019</span>
+	</div>      
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+            
+            
+            
+            
+            
+            
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        </body>
+    </head>
+</html>
